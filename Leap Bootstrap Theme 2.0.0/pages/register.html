@@ -1,0 +1,87 @@
+<!-- FILEPATH: /Users/adityakolekar/Documents/GitHub/APCSP3G4/login.html -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register your account</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+        href = "https://stackpath.bootstrap.cdn.com/boostrap/4.4.1/css/bootstrap.min.css">
+        <style>
+            /* Add some basic styling to the page */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+            }
+            /* Style the login form */
+            form {
+                background-color: #ffffff;
+                border: 1px solid #cccccc;
+                padding: 20px;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            /* Style the form fields */
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            /* Style the submit button */
+            input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+            /* Style the cancel button */
+            .cancelbtn {
+                background-color: #f44336;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+            /* Add some hover effects to the buttons */
+            input[type=submit]:hover, .cancelbtn:hover {
+                opacity: 0.8;
+            }
+            /* Add some extra styling to the container */
+            .container {
+                padding: 16px;
+            }
+            /* Add some styling to the error message */
+            .error {
+                color: red;
+                font-size: 12px;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Register Form</h2>
+        <form action="#" method="post">
+            <div class="container">
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+                <button type="submit">Sign Up</button>
+                <button type="button" class="cancelbtn">Cancel</button>
+                <div class="error"></div>
+            </div>
+        </form>
+        <a href="login.html">Back to login</a>
+        <br>
+        <a href="index.html">Back to home</a>
+    </body>
+</html>
