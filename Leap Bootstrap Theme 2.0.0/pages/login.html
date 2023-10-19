@@ -81,6 +81,64 @@
             </div>
         </form>
         <a href="register.html">Create an account</a>
+        <!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="mt-5">Sign Up</h1>
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+
+                <p class="mt-3" id="message"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById("signup-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            // You can add your own logic here to process the sign-up data
+            // For a real website, you should validate and store the user data securely.
+
+            // For this example, we'll just display a message to the user.
+            const message = `Thank you, ${name}! You've successfully signed up with the email ${email}.`;
+
+            document.getElementById("message").textContent = message;
+        });
+    </script>
+</body>
+</html>
+
         <br>
         <a href="index.html">Back to home</a>
     </body>
